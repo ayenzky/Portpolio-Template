@@ -1,3 +1,40 @@
+section#last.home-section
+  div.container
+    div.row
+      div.col-lg-8.col-lg-offset-2.text-center
+        h2.margin-top-0.wow.fadeIn Get in Touch
+        hr.primary
+        p.lead We love feedback. Fill out the form below and we'll get back to you as soon as possible.
+
+      div.col-lg-10.col-lg-offset-1.text-center
+        form.contact-form.row.object-non-visible(data-animation-effect="swing")
+          div.col-md-4
+              label
+              input(type="text", class="form-control", placeholder="Name")
+          div.col-md-4
+              label
+              input(type="text", class="form-control", placeholder="Email")
+        
+          div.col-md-4
+              label
+              input(type="text", class="form-control", placeholder="Phone")
+          
+          div.col-md-12
+              label
+              textarea(class="form-control", rows="9", placeholder="Your message here..")
+          
+          div.col-md-4.col-md-offset-4
+              label
+              button(type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg") Send 
+                i.ion-android-arrow-forward
+  footer
+    div.container
+      div.row
+        div.col-md-12.col-lg-12
+          p Copyright © 2014 Ninestars - by 
+            a(href="http://bootstraptaste.com") Bootstrap Themes
+      
+
 <!-- Core JavaScript Files -->
 script(src="../js/jquery.min.js")
 script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
@@ -9,5 +46,6 @@ script(src="../js/classie.js")
 script(src="../js/gnmenu.js")
 script(src="../js/jquery.scrollTo.js")
 script(src="../js/stellar.js")
+script(src="../js/mooz.themes.scripts.js")
 <!-- Custom Theme JavaScript -->
 script(src="../js/custom.js")

@@ -8,21 +8,23 @@ block content
           div.col-lg-8.col-lg-offset-2
             div.section-heading
               h2 About Us
-              p Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
-              a(href="#") Learn More
+              hr.secondary
+              p.lead.text-center Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
+              a(href="#service", class="btn btn-default btn-xl page-scroll", data-animation-effect="tada") Learn More
               
   <!-- Section: services -->
   section#service.home-section.text-center
     
-    div.heading-about.marginbot-50
+    div.heading-about
       div.container
         div.row
           div.col-lg-8.col-lg-offset-2
             div.section-heading
               h2 Our Services
-              p Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
+              hr.primary
+              p.lead.text-center Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
             
-      div.container
+      div.container.margintop-50
         div.row
             div.col-sm-3.col-md-3
               div.service-box
@@ -34,7 +36,7 @@ block content
                
            
             div.col-sm-3.col-md-3
-              div.service-box
+              div.service-box.object-non-visible(data-animation-effect="fadeInLeft")
                 div.service-icon
                   i.fa.fa-suitcase.fa-3x
                 div.service-desc
@@ -42,25 +44,26 @@ block content
                   p Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.
      
             div.col-sm-3.col-md-3
-              div.service-box
+              div.service-box.object-non-visible(data-animation-effect="fadeInLeft")
                 div.service-icon
                   i.fa.fa-cog.fa-3x 
-              div.service-desc
-                h5 Photography
-                p Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.
+                div.service-desc
+                  h5 Photography
+                  p Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.
           
             div.col-sm-3.col-md-3
-              div.service-box
+              div.service-box.object-non-visible(data-animation-effect="fadeInLeft")
                 div.service-icon
                   i.fa.fa-rocket.fa-3x
-              div.service-desc
-                h5 Cloud System
-                p Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.
+                div.service-desc
+                  h5 Cloud System
+                  p Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.
 
-  div.section
+          
+  section.home-section#works
     div.container
       h1.text-center.title#portfolio Portfolio
-      div.separator
+      hr.secondary
       p.lead.text-center Lorem ipsum dolor sit amet laudantium molestias similique.<br> Quisquam incidunt ut laboriosam.
       br
       div(class="row object-non-visible", data-animation-effect="fadeIn")
@@ -96,14 +99,15 @@ block content
                   div.modal-content
                     div.modal-header
                       button(type="button", class="close", data-dismiss="modal")
-                        span(aria-hidden="true")&times;
+                        span(aria-hidden="true") &times;
                         span.sr-only Close
-                      h4.modal-title#project-1-label Project Title
+                      h3.modal-title#project-1-label Project Title
                     
                     div.modal-body
-                      h3 Project Description
+                      
                       div.row
                         div.col-md-6
+                          h4 Description
                           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                           p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
                         
@@ -128,14 +132,15 @@ block content
                   div.modal-content
                     div.modal-header
                       button(type="button", class="close", data-dismiss="modal")
-                        span(aria-hidden="true")&times;
+                        span(aria-hidden="true") &times;
                         span.sr-only Close
-                      h4.modal-title#project-2-label Project Title
+                      h3.modal-title#project-2-label Project Title
 
                     div.modal-body
-                      h3 Project Description
+                      
                       div.row
                         div.col-md-6
+                          h4 Description
                           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                           p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
                         
@@ -162,14 +167,15 @@ block content
                     div.modal-content
                       div.modal-header
                         button(type="button", class="close", data-dismiss="modal")
-                          span(aria-hidden="true")&times;
+                          span(aria-hidden="true") &times;
                           span.sr-only Close
-                        h4.modal-title#project-3-label Project Title
+                        h3.modal-title#project-3-label Project Title
                       
                       div.modal-body
-                        h3 Project Description
+                        
                         div.row
                           div.col-md-6
+                            h4 Description
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                             p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
                           
@@ -195,14 +201,15 @@ block content
                     div.modal-content
                       div.modal-header
                         button(type="button", class="close", data-dismiss="modal")
-                          span(aria-hidden="true")&times;
+                          span(aria-hidden="true") &times;
                           span.sr-only Close
-                        h4.modal-title#project-4-label Project Title
+                        h3.modal-title#project-4-label Project Title
                       
                       div.modal-body
-                        h3 Project Description
+                        
                         div.row
                           div.col-md-6
+                            h4 Description
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                             p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
 
@@ -229,14 +236,15 @@ block content
                     div.modal-content
                       div.modal-header
                         button(type="button", class="close", data-dismiss="modal")
-                          span(aria-hidden="true")&times;
+                          span(aria-hidden="true") &times;
                           span.sr-only Close
-                        h4.modal-title#project-5-label Project Title
+                        h3.modal-title#project-5-label Project Title
                       
                       div.modal-body
-                        h3 Project Description
+                        
                         div.row
                           div.col-md-6
+                            h4 Description
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                             p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
 
@@ -263,14 +271,15 @@ block content
                     div.modal-content
                       div.modal-header
                         button(type="button", class="close", data-dismiss="modal")
-                          span(aria-hidden="true")&times;
+                          span(aria-hidden="true") &times;
                           span.sr-only Close
-                        h4.modal-title#project-6-label Project Title
+                        h3.modal-title#project-6-label Project Title
                       
                       div.modal-body
-                        h3 Project Description
+                        
                         div.row
                           div.col-md-6
+                            h4 Description
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                             p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
 
@@ -297,14 +306,15 @@ block content
                     div.modal-content
                       div.modal-header
                         button(type="button", class="close", data-dismiss="modal")
-                          span(aria-hidden="true")&times;
+                          span(aria-hidden="true") &times;
                           span.sr-only Close
-                        h4.modal-title#project-7-label Project Title
+                        h3.modal-title#project-7-label Project Title
                       
                       div.modal-body
-                        h3 Project Description
+                        
                         div.row
                           div.col-md-6
+                            h4 Description
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                             p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
 
@@ -331,14 +341,15 @@ block content
                     div.modal-content
                       div.modal-header
                         button(type="button", class="close", data-dismiss="modal")
-                          span(aria-hidden="true")&times;
+                          span(aria-hidden="true") &times;
                           span.sr-only Close
-                        h4.modal-title#project-8-label Project Title
+                        h3.modal-title#project-8-label Project Title
                       
                       div.modal-body
-                        h3 Project Description
+                        
                         div.row
                           div.col-md-6
+                            h4 Description
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                             p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
 
@@ -365,14 +376,15 @@ block content
                     div.modal-content
                       div.modal-header
                         button(type="button", class="close", data-dismiss="modal")
-                          span(aria-hidden="true")&times;
+                          span(aria-hidden="true") &times;
                           span.sr-only Close
-                        h4.modal-title#project-9-label Project Title
+                        h3.modal-title#project-9-label Project Title
                       
                       div.modal-body
-                        h3 Project Description
+                        
                         div.row
                           div.col-md-6
+                            h4 Description
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                             p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
 
@@ -399,14 +411,15 @@ block content
                     div.modal-content
                       div.modal-header
                         button(type="button", class="close", data-dismiss="modal")
-                          span(aria-hidden="true")&times;
+                          span(aria-hidden="true") &times;
                           span.sr-only Close
-                        h4.modal-title#project-10-label Project Title
+                        h3.modal-title#project-10-label Project Title
                       
                       div.modal-body
-                        h3 Project Description
+                        
                         div.row
                           div.col-md-6
+                            h4 Description
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                             p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
 
@@ -433,14 +446,15 @@ block content
                     div.modal-content
                       div.modal-header
                         button(type="button", class="close", data-dismiss="modal")
-                          span(aria-hidden="true")&times;
+                          span(aria-hidden="true") &times;
                           span.sr-only Close
-                        h4.modal-title#project-11-label Project Title
+                        h3.modal-title#project-11-label Project Title
                       
                       div.modal-body
-                        h3 Project Description
+                        
                         div.row
                           div.col-md-6
+                            h4 Description
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                             p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
 
@@ -467,14 +481,15 @@ block content
                     div.modal-content
                       div.modal-header
                         button(type="button", class="close", data-dismiss="modal")
-                          span(aria-hidden="true")&times;
+                          span(aria-hidden="true") &times;
                           span.sr-only Close
-                        h4.modal-title#project-12-label Project Title
+                        h3.modal-title#project-12-label Project Title
                       
                       div.modal-body
-                        h3 Project Description
+                        
                         div.row
                           div.col-md-6
+                            h4 Description
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.
                             p Molestiae sed enim laboriosam atque delectus voluptates rerum nostrum sapiente obcaecati molestias quasi optio exercitationem, voluptate quis consequatur libero incidunt, in, quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nobis officiis, autem earum tenetur quidem. Quae non dicta earum. Ipsum autem eaque cum dolor placeat corporis quisquam dolorum at nesciunt.
 
@@ -484,3 +499,51 @@ block content
                       div.modal-footer
                         button(type="button", class="btn btn-sm btn-default", data-dismiss="modal") Close
               <!-- Modal end -->
+
+  section.container-fluid#features
+    div.row
+        div.container.margintop-50
+            h2.text-center Features
+            hr.primary
+            p.lead.text-center Lorem ipsum dolor sit amet laudantium molestias similique. <br>Quisquam incidunt ut laboriosam.
+        div.container.margintop-50.marginbot-50
+            div.col-md-3.text-center.object-non-visible(data-animation-effect="fadeInRight")
+                
+                div.media
+                    i.fa.fa-fire.fa-4x
+                h5 Simple
+                div.media-body.media-middle
+                    p What could be easier? Get started fast with this landing page starter theme.
+                
+                
+
+            div.col-md-3.text-center.object-non-visible(data-animation-effect="fadeInRight")
+                
+                div.media
+                    i.fa.fa-cloud-download.fa-4x
+                h5 Free
+                div.media-body.media-middle
+                    p Yes, please. Grab it for yourself, and make something awesome with this.
+
+            div.col-md-3.text-center.object-non-visible(data-animation-effect="fadeInRight")
+                
+                div.media
+                    i.fa.fa-diamond.fa-4x
+                h5 Unique
+                div.media-body.media-middle
+                    p Because you don't want your Bootstrap site, to look like a Bootstrap site.
+                
+                
+    
+            div.col-md-3.text-center
+                
+                div.media
+                    i.fa.fa-heart.fa-4x
+                h5 Popular
+                div.media-body.media-middle
+                    p There's good reason why Bootstrap is the most used frontend framework in the world.  
+
+                
+
+  
+          

@@ -41,7 +41,7 @@ p.lead {
 }
 
 a {
-    color: #28c3ab;
+    color: #55acee;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -80,6 +80,12 @@ hr {
 .marginbot-30{margin-bottom:30px !important;}
 .marginbot-40{margin-bottom:40px !important;}
 .marginbot-50{margin-bottom:50px !important;}
+.margintop-0{margin-top:0 !important;}
+.margintop-10{margin-top:10px !important;}
+.margintop-20{margin-top:20px !important;}
+.margintop-30{margin-top:30px !important;}
+.margintop-40{margin-top:40px !important;}
+.margintop-50{margin-top:50px !important;}
 
 /* ===========================
 --- General sections
@@ -140,7 +146,7 @@ hr {
     margin: 0;
     padding: 0;
     background: rgba(0, 0, 0, 0.3);
-    color: #eb5d1e;
+    color: #ffffff;
     list-style: none;
     text-transform: none;
     font-weight: 300;
@@ -148,7 +154,9 @@ hr {
     line-height: 60px;
     z-index:150;
 }
-
+.gn-menu-main ul.company-social{
+  background-color:transparent;
+}
 .gn-menu-main {
     position: fixed;
     top: 0;
@@ -169,7 +177,7 @@ hr {
 .no-touch .gn-menu-main a:hover,
 .no-touch .gn-menu li.gn-search-item:hover,
 .no-touch .gn-menu li.gn-search-item:hover a {
-    background: #eb5d1e;
+    background: #222;
     color: white;
 }
 
@@ -197,7 +205,7 @@ hr {
 .gn-menu-main > li:last-child {
     float: right;
     border-right: none;
-    margin-right:1px;
+    margin-right: 2px;
 }
 
 .gn-menu-main > li > a {
@@ -245,7 +253,7 @@ hr {
 
 .gn-menu li:not(:first-child),
 .gn-menu li li {
-    box-shadow: inset 0 1px #c6d0da
+    border-top:1px solid #fff;
 }
 
 .gn-submenu li {
@@ -267,7 +275,7 @@ input.gn-search {
     outline: none;
     border: none;
     background: transparent;
-    color: #eb5d1e;
+    color: #fff;
     font-weight: 300;
     font-family: 'Lato', Arial, sans-serif;
     cursor: pointer;
@@ -276,19 +284,19 @@ input.gn-search {
 /* placeholder */
 
 .gn-search::-webkit-input-placeholder {
-    color: #eb5d1e
+    color: #ffffff
 }
 
 .gn-search:-moz-placeholder {
-    color: #eb5d1e
+    color: #ffffff
 }
 
 .gn-search::-moz-placeholder {
-    color: #eb5d1e
+    color: #ffffff
 }
 
 .gn-search:-ms-input-placeholder {
-    color: #eb5d1e
+    color: #ffffff
 }
 
 /* hide placeholder when active in Chrome */
@@ -695,12 +703,13 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 
 footer {
   text-align: center;
-  padding: 50px 0 ;
-  
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 footer p {
   color: #f8f8f8;
+  margin:0px;
 }
 
 footer a {
@@ -836,10 +845,11 @@ footer a:hover {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    outline:none;
 }
 
 .btn.btn-primary:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 .btn {
     border: 0;
@@ -865,10 +875,10 @@ footer a:hover {
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #28c3ab;
+    border: 1px solid #55acee;
     outline: 0;
-    color: #000;
-    background-color: #28c3ab;
+    color: #fff;
+    background-color: #55acee;
 }
 
 .btn-huge {
@@ -938,6 +948,11 @@ hr {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+hr.secondary{
+   opacity:1;
+}
+
 
 hr.light {
     border-color: #fff;
@@ -1087,6 +1102,8 @@ hr.light {
 }
 .isotope-item .btn-default {
   color: #999999;
+  border-radius:0px;
+  border-color:#ccc;
 }
 .isotope-item .btn-default:hover {
   color: #ffffff;
@@ -1113,7 +1130,6 @@ hr.light {
   padding: 8px 20px;
   border: 1px solid #cacaca;
   color: #666666;
-  font-size: 12px;
   text-transform: uppercase;
   font-weight: 300;
 }
