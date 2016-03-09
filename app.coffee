@@ -3,6 +3,7 @@ rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
 js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
+cleanUrls    = require('clean-urls')
 
 module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
@@ -21,3 +22,6 @@ module.exports =
 
   jade:
     pretty: true
+
+  server:
+    "clean_urls": true
