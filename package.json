@@ -1,17 +1,18 @@
 {
-  "name": "-template-2",
-  "description": "Template 2",
+  "name": "simple-portfolio-page-design",
+  "description": "simple portfolio page design",
   "dependencies": {
     "autoprefixer-stylus": "0.8.x",
     "axis": "0.5.x",
+    "clean-urls": "^1.1.5",
     "coffee-script": "^1.0.0",
     "css-pipeline": "0.3.x",
     "jade": "^1.0.0",
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "^1.0.0",
     "marked": "0.3.x",
+    "roots": "4.0.1",
     "rupture": "0.6.x",
-    "stylus": "0.52.x",
-    "roots": "4.0.1"
+    "stylus": "0.52.x"
   }
 }
