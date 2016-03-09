@@ -7,14 +7,14 @@ section#last.home-section
         p.lead We love feedback. Fill out the form below and we'll get back to you as soon as possible.
 
       div.col-lg-10.col-lg-offset-1.text-center
-        form.contact-form.row.object-non-visible(data-animation-effect="swing", name="contact-form", action="thank-you-page", netlify)
+        form.contact-form.row.object-non-visible(data-animation-effect="swing", name="contact-form", action="thank-you-page", netlify, netlify-honeypot="bot-field")
           input(type="hidden", name="subject", value="Online Enquiries")
           div.col-md-4
               label
-              input(type="text", class="form-control", placeholder="Name", name="name")
+              input(type="text", class="form-control", placeholder="Name", name="name", required)
           div.col-md-4
               label
-              input(type="text", class="form-control", placeholder="Email", name="email")
+              input(type="text", class="form-control", placeholder="Email", name="email", required)
 
           div.col-md-4
               label
