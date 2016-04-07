@@ -1,0 +1,195 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en");
+
+// Font stacks (add your own!)
+$opensans =  'Open Sans', helvetica, arial, sans-serif
+
+// Color Properties
+
+// Default font settings
+
+$white		= #ffffff
+$label 		= #cfcfcf
+$base	 	= #2196F3
+$secondary	= #ff5252
+$lighter 	= #f5f5f5
+
+$font-stack 		= $opensans
+$font-size 			= 15px
+$font-color 		= #757575
+$font-color-lighter	= $lighter 
+$font-color-label	= $label
+$font-color-navy	= $base	
+$background-color	= $base	
+$background-lighter	= $white
+$background-light	= $lighter
+$background-dark	= #424242
+$border-color		= #e7eaec
+
+
+box-shadow(e)
+	-webkit-box-shadow e
+	-opera-box-shadow e
+	-moz-box-shadow e
+	box-shadow e
+
+body 
+	background #f5f5f5
+
+
+// Dashboard -> Navigation
+body.ember-application .cms-navbar-top
+	background #ffffff !important
+	border-bottom 1px solid $border-color !important
+	z-index 9
+
+body.ember-application .cms-navbar-top .cms-icon
+	color $font-color-navy
+	font-size 24px
+
+body.ember-application 
+	.cms-nav-link, .cms-breadcrumb
+		color $font-color
+		font-weight 600
+	.com-nav-link:hover, .cms-breadcrumb:hover
+		color $font-color-navy 
+
+body.ember-application 
+	.cms-aside-link.active
+		color #fff
+
+body.ember-application .cms-nav-link
+	border none !important
+	padding-right 25px
+	padding-left 25px
+	
+body.ember-application .cms-navbar-top .cms-dropdown
+	background-color $background-lighter
+	padding-top 8px
+	padding-bottom 8px
+	border 1px solid $border-color
+	border-top none
+
+body.ember-application .cms-navbar-top .cms-dropdown:after
+	top 0
+	border-top 8px solid $background-color
+
+body.ember-application .cms-navbar-top .cms-dropdown-link
+	color $font-color
+	font-weight 600
+	padding-top 8px !important
+	padding-bottom 8px !important
+	
+	
+body.ember-application .cms-list-header, 
+body.ember-application .cms-message-title
+	color $font-color
+	border-color $border-color
+	
+body.ember-application .cms-list-entry
+	box-shadow(0 1px 2px rgba(0, 0, 0, 0.1))
+	
+body.ember-application .cms-aside
+	background $background-color
+
+body.ember-application .cms-aside-link
+	color $font-color-lighter 
+	position relative
+	top -3px
+	
+body.ember-application .cms-aside-new-link,
+body.ember-application .cms-new-link
+	color $font-color-lighter
+	
+body.ember-application .cms-navbar-bottom
+	background $background-dark
+	
+body.ember-application .cms-action, 
+body.ember-application .cms-link
+	color $font-color-light
+
+body.ember-application .cms-action.cms-btn-delete, 
+body.ember-application .cms-link.cms-save-btn, 
+body.ember-application .cms-link.cms-settings-btn
+	background $background-color
+	border-color $font-color-navy
+	color $font-color-lighter
+	padding-top 8px
+	padding-bottom 8px
+
+body.ember-application .cms-action:hover, 
+body.ember-application .cms-link:hover
+	background transparent
+	border-color $font-color-lighter
+	color $font-color-lighter
+
+body.ember-application .cms-sidebar-bottom .cms-action:hover
+	background $background-dark
+
+
+body.ember-application .cms-loading-indicator, 
+body.ember-application .cms-loading-indicator-inner
+	border-color $font-color-navy
+
+body.ember-application .cms-action.cms-btn-delete .cms-icon, 
+body.ember-application .cms-link.cms-save-btn .cms-icon, 
+body.ember-application .cms-link.cms-settings-btn .cms-icon
+	color $font-color-lighter
+	
+
+body.ember-application .cms-actionbar, 
+body.ember-application .cms-navbar-bottom, 
+body.ember-application .cms-sidebar-bottom
+	padding-top 15px
+	padding-bottom 15px
+
+// Preview -> Left -> List Items 
+ 
+body.ember-application .cms-control
+	background $background-light
+	
+body.ember-application .cms-list-item .cms-control
+	background $background-lighter
+	
+body.ember-application .cms-control label
+	color $font-color-label
+
+body.ember-application .cms-widget .cms-control
+	background $background-lighter
+
+body.ember-application .cms-upload-dropzone
+	background $background-light
+
+body.ember-application .cms-control:after
+	display none
+
+body.ember-application .cms-control input:not([type=checkbox])
+	font-weight 600
+
+
+// Preview -> Left -> Footer 
+
+body.ember-application .cms-message
+	color $font-color-light
+	
+body.ember-application .cms-list-item.cms-collapsed .cms-item-container
+	height 65px
+
+body.ember-application .cms-list-item .cms-icon-drag
+	top 25px
+
+body.ember-application .cms-list-item .cms-collapse-control
+	top 22px
+	
+// Login Section
+
+body.ember-application .cms-message-box,
+body.ember-application .cms-login
+	background-color $background-lighter
+	box-shadow(0 1px 2px rgba(0, 0, 0, 0.1))
+	
+body.ember-application .cms-login-button
+	background-color $background-color !important
+	text-decoration none
+
+body.ember-application .cms-login-button:hover
+	background-color $background-dark !important
