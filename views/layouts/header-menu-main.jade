@@ -16,32 +16,14 @@
               a(href="#last" class="gn-icon gn-icon-archive") Contact
             li.social-media
               ul.company-social
-                li.social-facebook
-                  a(href="#", target="_blank")
-                    i.fa.fa-facebook
-                li.social-twitter
-                  a(href="#", target="_blank")
-                    i.fa.fa-twitter
-                li.social-dribble
-                  a(href="#", target="_blank")
-                    i.fa.fa-dribbble
-                li.social-google
-                  a(href="#", target="_blank")
-                    i.fa.fa-google-plus
+                - each item  in records.socials.social
+                    li(class="social-" + item.name.toLowerCase())
+                      a(href=item.path, target="_blank")!= item.icon 
 
     li
       a(href="/") LOGO HERE
     li
       ul.company-social
-        li.social-facebook
-          a(href="#", target="_blank")
-            i.fa.fa-facebook
-        li.social-twitter
-          a(href="#", target="_blank")
-            i.fa.fa-twitter
-        li.social-dribble
-          a(href="#", target="_blank")
-            i.fa.fa-dribbble
-        li.social-google
-          a(href="#", target="_blank")
-            i.fa.fa-google-plus
+        - each item  in records.socials.social
+            li(class="social-" + item.name.toLowerCase())
+              a(href=item.path, target="_blank")!= item.icon

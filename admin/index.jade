@@ -59,14 +59,16 @@ html
     script(type="text/x-handlebars" data-template-name='cms/preview/socials').
       <div id="main-wrapper">
         <div class="container">
-          {{#cms-preview field="data" as |social| }}
-            <section class="box">              
-              <header>
-                <h3>{{social.name}}</h3>
-              </header>
-              <p>{{social.path}}</p>
-            </section>
+        <ul>
+          {{#cms-preview field="social" as |social| }}
+
+            <li>
+              {{social.name}}
+              {{cms-preview field="icon" from=social}}
+            </li>    
+
           {{/cms-preview}}
+          </ul>
         </div>
       </div>
   
