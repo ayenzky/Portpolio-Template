@@ -10,6 +10,7 @@ html
     link(rel="stylesheet", href="/css/style.css")
     link(rel="stylesheet", href="/css/style-desktop.css")
     link(rel="stylesheet", href="/css/webriq-template.css")
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
 
 
     style.
@@ -50,7 +51,7 @@ html
               <header>
                 <h3>{{character.name}}</h3>
               </header>
-              <p>{{character.description}}</p>
+              <p>{{{character.description}}}</p>
             </section>
           {{/cms-preview}}
         </div>
@@ -59,12 +60,11 @@ html
     script(type="text/x-handlebars" data-template-name='cms/preview/socials').
       <div id="main-wrapper">
         <div class="container">
-        <ul>
+        <ul class="team-social">
           {{#cms-preview field="social" as |social| }}
 
-            <li>
-              {{social.name}}
-              {{cms-preview field="icon" from=social}}
+            <li class="social-{{social.name}}">              
+                <a href={{social.path}} target="_blank">{{{social.icon}}}</a> 
             </li>    
 
           {{/cms-preview}}
