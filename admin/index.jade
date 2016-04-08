@@ -55,6 +55,20 @@ html
           {{/cms-preview}}
         </div>
       </div>
+
+    script(type="text/x-handlebars" data-template-name='cms/preview/social').
+      <div id="main-wrapper">
+        <div class="container">
+          {{#cms-preview field="social" as |social| }}
+            <section class="box">              
+              <header>
+                <h3>{{social.name}}</h3>
+              </header>
+              <p>{{social.path}}</p>
+            </section>
+          {{/cms-preview}}
+        </div>
+      </div>
   
     script(src="//cms.netlify.com/assets/vendor.js")
     script(src="//cms.netlify.com/assets/cms.js")
