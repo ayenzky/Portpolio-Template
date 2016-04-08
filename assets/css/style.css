@@ -98,7 +98,9 @@ hr {
     position:relative;
     z-index:120;
 }
-
+.main-page .home-section {
+  padding-bottom: 0px;
+}
 
 .section-heading h2 {
   font-size: 40px;

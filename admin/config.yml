@@ -12,26 +12,24 @@ media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 public_folder: "assets"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post"  # Used in the UI, ie.: "New Post"
-    folder: "posts" # The path to the folder where the documents are stored
+  - name: "page" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Pages"  # Used in the UI, ie.: "New Post"
+    folder: "pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Banner", name: "banner", widget: "image", class: "image featured"}
       - {label: "Short Description", name: "shortdesc", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Categories", name: "categories", widget: "string"}
   - name: "data"
     label: "Data"
     files:
       - name: "characters"
-        label: "Characters"
+        label: "Porfolio"
         file: "data/characters.json"
         fields:
-          - label: "Characters"
+          - label: "Porfolio"
             name: "data"
             widget: "list"
             fields:
