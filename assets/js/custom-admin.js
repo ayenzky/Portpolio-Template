@@ -1,8 +1,8 @@
 // Global variables for webriq tweaks
 
-var logo 	= '/img/logo@xs.png';	// Path for your Logo
-var nav  	= true;				// Enable or Disble "NEW" Post link 
-var social 	= '.team-social'; 	// Add the target div to customize list
+var logo 		= '/img/logo@xs.png';	// Path for your Logo
+var nav  		= true;					// Enable or Disble "NEW" Post link 
+var social 		= '.team-social'; 		// Add the target div to customize list
 
 // WARNING: Avoid using Document Ready
 // because most of the items are fetch
@@ -32,6 +32,15 @@ $( document ).ajaxComplete(function() {
 		lowercase(social);
 	}, 100)
 
+	function myTimer() {
+	    var d = new Date();
+	    var t = d.toLocaleTimeString();
+	    document.getElementById("demo").innerHTML = t;
+	}
+
+	function myStopFunction() {
+	    clearInterval(timer);
+	}
 	// Admin -> Dashboard -> Right Nav
 	// Remove the First Link if all pages
 	// Are static. Toggle 'nav' above to enable
@@ -53,17 +62,7 @@ function lowercase(el){
 	$(el).find('li').each(function(){			
 		var a = $(this).attr('class').toLowerCase();
 		$(this).attr('class', a);
-		console.log(a);
 	});
 }
 
 
-function myTimer() {
-    var d = new Date();
-    var t = d.toLocaleTimeString();
-    document.getElementById("demo").innerHTML = t;
-}
-
-function myStopFunction() {
-    clearInterval(timer);
-}
