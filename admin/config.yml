@@ -39,13 +39,13 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Description", name: "description", widget: "string"}
 
   - name: "social"
-    label: "Social Media"
+    label: "Social"
     files:
       - name: "socials"
-        label: "Social Media"
-        file: "data/social-media.json"
+        label: "Social"
+        file: "data/socials.json"
         fields:
-          - label: "Social Media"
+          - label: "Social"
             name: "social"
             widget: "list"
             fields:

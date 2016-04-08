@@ -28,7 +28,7 @@ module.exports =
   extensions: [
     records(
       characters: { file: "data/characters.json" }
-      site: { file: "data/site.json" }
+      socials: { file: "data/socials.json" }
     ),
     collections(folder: 'pages', layout: 'page'),
     js_pipeline(files: 'assets/js/*.coffee'),
