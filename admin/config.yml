@@ -5,7 +5,7 @@ backend:
 production:
   backend:
     name: github-api
-    repo: eljun/portfolio-static-template # Path to your Github repository
+    repo: owner/repo # Path to your Github repository
     branch: master # Branch to update (master by default)
 
 media_folder: "assets/img/uploads" # Folder where user uploaded files should go
