@@ -12,6 +12,26 @@ media_folder: "assets/img/uploads" # Folder where user uploaded files should go
 public_folder: "assets"
 
 collections: # A list of collections the CMS should be able to edit
+  - name: "sitedata"
+    label: "Site Information"
+    files:
+      - name: "sitedata"
+        label: "Site Information"
+        file: "data/site.json"
+        description: "edit site setting"
+        fields:
+          - label: "Site Information"
+            name: "sitedata"
+            widget: "list"
+            fields:
+              - {label: "Favicon", name: "icon", widget: "image", media_folder: "assets/img"}
+              - {label: "Site Logo", name: "logo", widget: "image", media_folder: "assets/img"}
+              - {label: "Site name", name: "sitename", widget: "string"}
+              - {label: "Website Description", name: "metadesc", widget: "string"}
+              - {label: "Author", name: "metauthor", widget: "string"}
+              - {label: "Keywords", name: "metakeyword", widget: "string"}
+              - {label: "Footer", name: "footer", widget: "markdown"}
+              - {label: "Google Analytics", name: "analytics", widget: "markdown"}
   - name: "page" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Pages"  # Used in the UI, ie.: "New Post"
     folder: "pages" # The path to the folder where the documents are stored
@@ -23,9 +43,9 @@ collections: # A list of collections the CMS should be able to edit
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime"}
   - name: "data"
-    label: "Data"
+    label: "Porfolio"
     files:
-      - name: "characters"
+      - name: "portfolio"
         label: "Porfolio"
         file: "data/characters.json"
         fields:

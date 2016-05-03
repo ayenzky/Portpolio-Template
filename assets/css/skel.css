@@ -6,16 +6,16 @@
 
 
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(1) a::before {
-	  content: "\f24d" !important;}
+	  content: "\f013" !important;}
 
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(2) a::before {
-	  content: "\f013"; }
+	  content: "\f24d"; }
 
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(3) a::before  {
-	  content: "\f247"; }
+	  content: "\f03e"; }
 
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(4) a::before  {
-	  content: "\f24d"; }
+	  content: "\f1e0"; }
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(5) a::before  {
 	  content: "\f1ea"; }
 
