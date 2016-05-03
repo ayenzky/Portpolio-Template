@@ -98,8 +98,19 @@ hr {
     position:relative;
     z-index:120;
 }
-
-
+.main-page .home-section {
+  padding-bottom: 0px;
+}
+.main-page .header * {
+  margin: 25px 0;
+}
+.main-page header {
+  min-height: 250px
+}
+.main-page .box.post {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
 .section-heading h2 {
   font-size: 40px;
 }
@@ -582,15 +593,15 @@ input.gn-search:focus {
 }
 .team-social .social-facebook a{background: #3873ae;}
 .team-social .social-twitter a{background: #62c6f8;}
-.team-social .social-dribble a{background: #d74980;}
+.team-social .social-dribbble a{background: #d74980;}
 .team-social .social-deviantart a{background: #8da356;}
-.team-social .social-google a{background: #000;}
+.team-social .social-google-plus a{background: #000;}
 .team-social .social-vimeo a{background: #51a6d3;}
 .team-social .social-facebook a:hover{background: #4893ce;}
 .team-social .social-twitter a:hover{background: #82e6ff;}
-.team-social .social-dribble a:hover{background: #f769a0;}
+.team-social .social-dribbble a:hover{background: #f769a0;}
 .team-social .social-deviantart a:hover{background: #adc376;}
-.team-social .social-google a:hover{background: #333;}
+.team-social .social-google-plus a:hover{background: #333;}
 .team-social .social-vimeo a:hover{background: #71c6f3;}
 
 
@@ -684,15 +695,15 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 }
 .company-social .social-facebook a{background: #3873ae;}
 .company-social .social-twitter a{background: #62c6f8;}
-.company-social .social-dribble a{background: #d74980;}
+.company-social .social-dribbble a{background: #d74980;}
 .company-social .social-deviantart a{background: #8da356;}
-.company-social .social-google a{background: #000;}
+.company-social .social-google-plus a{background: #000;}
 .company-social .social-vimeo a{background: #51a6d3;}
 .company-social .social-facebook a:hover{background: #4893ce;}
 .company-social .social-twitter a:hover{background: #82e6ff;}
-.company-social .social-dribble a:hover{background: #f769a0;}
+.company-social .social-dribbble a:hover{background: #f769a0;}
 .company-social .social-deviantart a:hover{background: #adc376;}
-.company-social .social-google a:hover{background: #333;}
+.company-social .social-google-plus a:hover{background: #333;}
 .company-social .social-vimeo a:hover{background: #71c6f3;}
 
 

@@ -66,10 +66,27 @@
 		$(".modal").each(function() {
 			$(".modal").prependTo( "body" );
 		});
-	}
+	} 
 
+	// Execute Filtering
 
+	removeDuplicates();
 
 })(jQuery);
 
 
+// Removing Duplicated Entries
+function removeDuplicates() {
+	 
+	var map = {};
+    $(".filters.text-center ul.nav").find("li a").each(function () {
+        var value = $(this);
+        if (map[value.text()]) {
+            map[value.text()].parent('li').remove();
+        }
+        map[value.text()] = value;
+    });
+
+    $('.filters.text-center ul.nav').prepend('<li><a href="#" data-filter="*">All</a></li>')
+
+}
