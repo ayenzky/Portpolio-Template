@@ -7,11 +7,11 @@
         div.gn-scroller
           ul.gn-menu
             li
-              a(href="#first", class="gn-icon gn-icon-help") Home
+              a(href="/#first", class="gn-icon gn-icon-help") Home
             li
-              a(href="#about", class="gn-icon gn-icon-download") About
+              a(href="/#about", class="gn-icon gn-icon-download") About
             li
-              a(href="#works" class="gn-icon gn-icon-pictures") Works
+              a(href="/#works" class="gn-icon gn-icon-pictures") Works
             li
               a(href="#last" class="gn-icon gn-icon-archive") Contact
             li.social-media
@@ -21,10 +21,9 @@
                       a(href=item.path, target="_blank")!= item.icon 
 
     li
-      a(href="index.html") LOGO HERE
+      a(href="/") LOGO HERE
     li
       ul.company-social
         - each item  in records.socials.social
             li(class="social-" + item.name.toLowerCase())
               a(href=item.path, target="_blank")!= item.icon
-      

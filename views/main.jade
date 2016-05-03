@@ -1,0 +1,12 @@
+include layouts/header-top
+
+body.main-page(data-spy="scroll")
+
+    include layouts/header-menu-main
+
+    include layouts/header-bottom-main
+    
+    block content
+
+    include layouts/footer
+        != js()
