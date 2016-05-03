@@ -6,10 +6,10 @@
 
 
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(1) a::before {
-	  content: "\f013" !important;}
+	  content: "\f24d" !important;}
 
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(2) a::before {
-	  content: "\f03e"; }
+	  content: "\f013"; }
 
 	#left_col-2 ul.cms.cms-nav-menu li:nth-of-type(3) a::before  {
 	  content: "\f247"; }
