@@ -4,24 +4,13 @@ html
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Content Manager
-  
-    link(rel="stylesheet", href="//cms.netlify.com/assets/cms.css")
+
+    link(rel="stylesheet", href="//cms.webriq.com/assets/cms.css")
     link(rel="stylesheet", href="/css/skel.css")
-    link(rel="stylesheet", href="/css/style.css")
-    link(rel="stylesheet", href="/css/style-desktop.css")
-    link(rel="stylesheet", href="/css/webriq-template.css")
-    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
 
 
-    style.
-      .container {
-        width: auto;
-        max-width: 1200px;
-      }
-      body.ember-application .cms-list-entry {
-        background: #fff;
-      }
     script!= "CMS_ENV = \"" + (process.env.CMS_ENV || "development") + "\";"
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
 
     base(href="/admin/")
   body
@@ -63,18 +52,17 @@ html
         <ul class="team-social">
           {{#cms-preview field="social" as |social| }}
 
-            <li class="social-{{social.name}}">              
-                <a href={{social.path}} target="_blank">{{{social.icon}}}</a> 
-            </li>    
+            <li class="social-{{social.name}}">
+                <a href={{social.path}} target="_blank">{{{social.icon}}}</a>
+            </li>
 
           {{/cms-preview}}
           </ul>
         </div>
       </div>
-  
-    script(src="//cms.netlify.com/assets/vendor.js")
-    script(src="//cms.netlify.com/assets/cms.js")
-    script(src="/js/custom-admin.js")
+
+    script(src="//cms.webriq.com/assets/vendor.js")
+    script(src="//cms.webriq.com/assets/cms.js")
 
     //- script(src='https://app.netlify.com/authentication.js')
     //- script.
