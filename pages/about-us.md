@@ -1,9 +1,8 @@
 ---
-title: About Us
-date: 2014-04-21 10:33:56
+title: About
 categories:
 cmsUserSlug: about-us
-date: 2016-08-12T18:33:00+08:00
+date: 2016-04-07T16:00:00.000Z
 categories: ""
 ---
 
