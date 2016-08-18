@@ -6,12 +6,16 @@ It's based on Brian Rinaldi's great [Static Site Samples](https://github.com/rem
 
 ## Setting up
 
-Make sure to install the [netlify-git-api](https://github.com/netlify/netlify-git-api) before you start.
+* Install [node](https://nodejs.org/en/) application in your system.
+
+* Install [roots](http://roots.cx/articles/getting-started) in your system globally `npm i roots -g` if you haven't done this before.
+
+* Make sure to install the [netlify-git-api](https://github.com/netlify/netlify-git-api) before you start.
 
 Then:
 
 ```bash
-git clone https://github.com/webriq/business-static-template
+git clone https://github.com/webriq/portfolio-static-template.git
 cd roots-cms-example
 netlify-git-api users add
 netlify-git-api serve

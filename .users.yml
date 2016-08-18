@@ -3,3 +3,7 @@ users:
   name: Eleazar Junsan
   email: info@webriq.com
   hash: $2a$10$auFouT4VaCq4hwTOoPkT6eZnDHgtk6OgT7m2ZJQm3LEGQrlszvMIy
+- id: 11aa90b1-0e04-4940-bf0a-0688112cd9cc
+  name: allen
+  email: allen.support@webfactories.biz
+  hash: $2a$10$Yi.bUNCBlIqK7UfDZrm31exCqxymyBv11YnhKcbLSwtVuV.EDYpIS

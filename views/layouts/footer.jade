@@ -32,8 +32,7 @@ section#last.home-section
     div.container
       div.row
         div.col-md-12.col-lg-12
-          p Copyright © 2014 Ninestars - by
-            a(href="http://bootstraptaste.com") Bootstrap Themes
+          p= records.site.sitedata[0].footer
 
 
 <!-- Core JavaScript Files -->
@@ -51,3 +50,7 @@ script(src="/js/stellar.js")
 script(src="/js/mooz.themes.scripts.js")
 <!-- Custom Theme JavaScript -->
 script(src="/js/custom.js")
+
+//- <!-- Google Analytics -->
+//- script(type="text/javascript")
+//-     != records.site.sitedata[0].analytics
