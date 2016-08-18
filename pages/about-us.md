@@ -1,6 +1,6 @@
 ---
 title: About
-categories:
+categories: about
 cmsUserSlug: about-us
 date: 2016-04-07T16:00:00.000Z
 ---
